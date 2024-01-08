@@ -28,7 +28,7 @@ const handleChange = (e) => {
     <div>
         <form onSubmit={handleSubmit}>
             <label>
-               Goal:
+               <span>Goal: </span>
                <input type='text' value={goal} onChange={handleChange} />
             </label>
             <button type='submit'>Add Goal</button>
