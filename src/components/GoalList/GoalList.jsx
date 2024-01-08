@@ -15,7 +15,7 @@ const handleRemove = (goal) => {
     <div>
         {goals.map((goal) => (
             <li key={goal.id}>
-                <h2>{goal.text}</h2>
+                <h2><a href={goal.text}>{goal.text}</a></h2>
                 <button onClick={() => handleRemove(goal)} >
                     Remove Goal
                 </button>
